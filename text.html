@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- <blockquote></blockquote> 引用页面内容 -->
+    <blockquote>
+        <!-- 标题 -->
+        <h1>h1. Bootstrap heading</h1>
+        <h2>h2. Bootstrap heading</h2>
+        <h3>h3. Bootstrap heading</h3>
+        <h4>h4. Bootstrap heading</h4>
+        <h5>h5. Bootstrap heading</h5>
+        <h6>h6. Bootstrap heading</h6>
+        <!-- 带有副标题的标题标签 -->
+        <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+        <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+        <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+        <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+        <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+        <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+
+        <!-- 段落 -->
+        <!-- 默认14px 段落之间有10像素左右的间距 -->
+        <!-- 段落突出显示 class="lead" -->
+        <!-- 文字内容高亮 <mark></mark> -->
+        <!-- 删除文本 <del></del> / <s></s> -->
+        <!-- 带下划线的文本 <ins></ins> / <u></u> -->
+        <!-- 将字体缩小15%  <small></small> -->
+        <!-- 字体加粗 <strong></strong> -->
+        <!-- 文字倾斜 <em></em> -->
+        <p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+        <p><mark>Cum sociis natoque</mark> penatibus <strong>et</strong> magnis <em>dis parturient montes</em></p>
+        <p> <del>nascetur</del> ridiculus <s>mus</s>. <ins>Nullam</ins> id <u>dolor</u> id nibh ultricies
+            <small>vehicula</small></p>
+
+        <!-- 对齐方式 -->
+        <p class="text-left">居左</p>
+        <p class="text-center">居中</p>
+        <p class="text-right">居右</p>
+
+        <p class="text-justify">Justified text.</p>
+
+        <p class="text-nowrap">
+            不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行不换行
+        </p>
+        <p>换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行换行
+        </p>
+
+        <!-- 大小写 -->
+        <!-- 小写 -->
+        <p class="text-lowercase">Lowercased text.</p>
+        <!-- 大写 -->
+        <p class="text-uppercase">Uppercased text.</p>
+        <!-- 首字母大写 -->
+        <p class="text-capitalize">Capitalized text.</p>
+
+        <!-- 提示语 -->
+        <div title="这是abcd">abcd</div>
+        <abbr title="attribute">attr</abbr>
+
+        <!-- 地址 -->
+        <address>
+            <strong>Twitter, Inc.</strong><br>
+            1355 Market Street, Suite 900<br>
+            San Francisco, CA 94103<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+    </blockquote>
+
+    <!-- 列表 -->
+    <!-- 有序列表 -->
+    <ol>
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <li>我是li3</li>
+    </ol>
+    <!-- 无序列表 -->
+    <ul>
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <li>我是li3</li>
+    </ul>
+    <!-- 自定义列表 -->
+    <dl>
+        <dt>标题</dt>
+        <dd>内容</dd>
+        <dt>标题</dt>
+        <dd>内容</dd>
+        <dt>标题</dt>
+        <dd>内容</dd>
+    </dl>
+    <!-- 无样式列表  list-unstyled属性-->
+    <ul class="list-unstyled">
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <li>我是li3</li>
+    </ul>
+    <!-- 内联列表  list-inline属性 -->
+    <ul class="list-inline">
+        <li>我是li1</li>
+        <li>我是li2</li>
+        <li>我是li3</li>
+    </ul>
+
+    <div>
+        ab
+        <br>
+        a&nbsp;b
+        &lt;&gt;
+    </div>
+
+    <!-- 代码  <code></code> -->
+    For example, &lt;section&gt; should be wrapped as inline.  <br>
+    For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+
+    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+    <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+    <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+
+    <samp>This text is meant to be treated as sample output from a computer program.</samp>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .mid{
+            width: 1000px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="mid">
+        <!-- tr为行 -->
+        <!-- table-bordered 边框 -->
+        <!-- table-striped 隔行变色 -->
+        <!-- table-hover 鼠标悬停背景色 -->
+        <table class="table table-bordered  table-striped table-hover">
+            <!-- 表头 -->
+            <tr>
+                <!-- th 表头单元格 -->
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>工作</th>
+            </tr>
+            <!-- 表格体 -->
+            <tbody>
+                <tr>
+                    <!-- td 普通单元格 -->
+                    <!-- rowspan=合并行数 -->
+                    <td rowspan="2">张三</td>
+                    <td>18</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <!-- <td rowspan="2">张四</td> -->
+                    <td>17</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <td>张五</td>
+                    <!-- colspan=合并列数 -->
+                    <td colspan="2">16</td>
+                    <!-- <td>随便</td> -->
+                </tr>
+            </tbody>
+        </table>
+        <!-- table-condensed 紧缩表格（压低表格行高） -->
+        <table class="table table-bordered  table-striped table-hover table-condensed">
+            <!-- 表头 -->
+            <tr>
+                <!-- th 表头单元格 -->
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>工作</th>
+            </tr>
+            <!-- 表格体 -->
+            <tbody>
+                <tr>
+                    <!-- td 普通单元格 -->
+                    <!-- rowspan=合并行数 -->
+                    <td rowspan="2">张三</td>
+                    <td>18</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <!-- <td rowspan="2">张四</td> -->
+                    <td>17</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <td>张五</td>
+                    <!-- colspan=合并列数 -->
+                    <td colspan="2">16</td>
+                    <!-- <td>随便</td> -->
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered">
+            <!-- 表头 -->
+            <tr>
+                <!-- th 表头单元格 -->
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>工作</th>
+            </tr>
+            <!-- 表格体 -->
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>随便</td>
+                </tr>
+                <tr class="active">
+                    <td>张四</td>
+                    <td>17</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <td>张五</td>
+                    <td>16</td>
+                    <td>随便</td>
+                </tr>
+                <tr class="info">
+                    <td>张五</td>
+                    <td>16</td>
+                    <td>随便</td>
+                </tr>
+                <tr class="success">
+                    <td>张五</td>
+                    <td>16</td>
+                    <td>随便</td>
+                </tr>
+                <tr class="warning">
+                    <td>张五</td>
+                    <td>16</td>
+                    <td>随便</td>
+                </tr>
+                <tr class="danger">
+                    <td>张五</td>
+                    <td>16</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <td class="active">张五</td>
+                    <td class="success">16</td>
+                    <td>随便</td>
+                </tr>
+                <tr>
+                    <td class="info">张五</td>
+                    <td class="warning">16</td>
+                    <td class="danger">随便</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

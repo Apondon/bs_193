@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+        .active{
+            background-color: brown;
+        }
+        .clk{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="active"></div>
+    <div></div>
+    <div></div>
+</body>
+<script src="./jquery.min.js"></script>
+<script>
+    $(function(){
+        // console.log($)
+        $('div').on('click',function(){
+            // $(this) 是当前事件触发的元素
+            console.log($(this))
+            console.log($(this).hasClass('clk'))
+            // 判断点击的元素是否存在 clk 属性
+            if($(this).hasClass('clk')){ 
+                // 若有该属性 则将该属性移除
+                $(this).removeClass('clk')
+            }else{
+                // 若没有该属性，则添加该属性
+                $(this).addClass('clk')
+            }
+        })
+    })
+</script>
+</html>

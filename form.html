@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .warp {
+            width: 1100px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <!-- action="" 表单提交的地址   method=""表单提交的方式 -->
+        <!-- form-inline 将表单转换为行内表单 -->
+        <!-- form-horizontal 将表单水平排列 -->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="col-sm-2 control-label">Email address</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control  " id="exampleInputEmail1" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control col-sm-6" id="exampleInputPassword1"
+                        placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile" class="col-sm-2 control-label">File input</label>
+                <div class="col-sm-6">
+                    <input type="file" id="exampleInputFile" class="form-control">
+                    <p class="help-block">Example block-level help text here.</p>
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Check me out
+                </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <br>
+        <!-- 支持的控件类型
+        text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color -->
+        <!-- disabled 禁用 -->
+        <input type="text" class="form-control" disabled>
+        <!-- readonly 只读 -->
+        <input type="text" class="form-control" readonly>
+        <br>
+        <input type="password" class="form-control" disabled>
+        <!-- <input type="datetime" class="form-control  "> -->
+        <!-- 年月日时分 -->
+        <input type="datetime-local" class="form-control" disabled>
+        <!-- 年月日 -->
+        <input type="date" class="form-control" disabled>
+        <!-- 年月 -->
+        <input type="month" class="form-control" disabled>
+        <!-- 时分 -->
+        <input type="time" class="form-control">
+        <!-- 年周 -->
+        <input type="week" class="form-control">
+        <!-- 数字 -->
+        <input type="number" class="form-control">
+        <!-- 带有校验，当提交表单时，会验证输入内容，若无表单提交，则和普通的input表现相同 -->
+        <input type="email" class="form-control">
+        <input type="url" class="form-control">
+        <input type="search" class="form-control">
+        <input type="tel" class="form-control">
+        <!-- 颜色选择 -->
+        <input type="color" class="form-control">、
+
+        <!-- 文本域 -->
+        <textarea class="form-control" rows="5"></textarea>
+
+        <!-- 单选/复选 -->
+        <div class="checkbox disabled">
+            <label>
+                <input type="checkbox" value="" disabled>
+                选项1
+            </label>
+        </div>
+        <div class="checkbox disabled">
+            <label>
+                <input type="checkbox" value="" disabled>
+                选项2
+            </label>
+        </div>
+        <!-- 同行复选框 -->
+        <div class="checkbox-inline">
+            <label>
+                <input type="checkbox" value="">
+                选项1
+            </label>
+        </div>
+        <div class="checkbox-inline">
+            <label>
+                <input type="checkbox" value="">
+                选项2
+            </label>
+        </div>
+
+        <!-- 单选 -->
+        <div class="radio disabled">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" disabled>
+                单选1
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                单选2
+            </label>
+        </div>
+        <!-- 同行 -->
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios1" value="option1">
+                单选1
+            </label>
+        </div>
+        <div class="radio-inline">
+            <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadios2" value="option2">
+                单选2
+            </label>
+        </div>
+
+        <!-- 下拉 -->
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <!-- 多选下拉 -->
+        <select multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <!-- 静态控件 form-control-static-->
+        <form class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static">email@example.com</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control">
+                </div>
+            </div>
+        </form>
+
+        <!-- 带提示语的表单 -->
+        <label class="sr-only" for="inputHelpBlock">Input with help text</label>
+        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+        <!-- 提示语 -->
+        <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond
+            one line.</span>
+    </div>
+</body>
+
+</html>

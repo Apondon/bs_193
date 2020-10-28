@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .box {
+            width: 1200px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 普通按钮组 -->
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-info">Left</button>
+            <button type="button" class="btn btn-success">Middle</button>
+            <button type="button" class="btn btn-danger">Right</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- 按钮工具栏   将多个按钮组组合在一起 -->
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info">Left</button>
+                <button type="button" class="btn btn-success">Middle</button>
+                <button type="button" class="btn btn-danger">Right</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-warning">Middle</button>
+                <button type="button" class="btn btn-primary">Right</button>
+            </div>
+        </div>
+        <br>
+        <!-- 按钮组尺寸
+        btn-group-lg 大尺寸
+        默认
+        btn-group-sm 小尺寸
+        btn-group-xs 超小尺寸
+        -->
+        <div class="btn-group btn-group-lg" role="group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <div class="btn-group btn-group-xs" role="group">
+            <button type="button" class="btn btn-default">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <br><br>
+        <!-- 按钮和下拉菜单嵌套 -->
+        <div class="btn-group" role="group">
+            <!-- 按钮 -->
+            <button type="button" class="btn btn-default">默认</button>
+            <!-- 下拉按钮 -->
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <!-- 下拉列表 -->
+            <!-- dropdown-menu-right 右对齐属性 -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <!-- 小标题 -->
+                <li class="dropdown-header">地区</li>
+                <li><a href="#">北京</a></li>
+                <!-- class="disabled" 禁用菜单 -->
+                <li class="disabled"><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <li class="dropdown-header">地区</li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <!-- 分割线 -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#">喀什</a></li>
+            </ul>
+
+        </div>
+
+        <!-- 竖直排列的按钮组 -->
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <!-- 按钮 -->
+            <button type="button" class="btn btn-default">默认</button>
+            <button type="button" class="btn btn-default">默认</button>
+            <button type="button" class="btn btn-default">默认</button>
+            <!-- 下拉按钮 -->
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <!-- 下拉列表 -->
+            <!-- dropdown-menu-right 右对齐属性 -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <!-- 小标题 -->
+                <li class="dropdown-header">地区</li>
+                <li><a href="#">北京</a></li>
+                <!-- class="disabled" 禁用菜单 -->
+                <li class="disabled"><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <li class="dropdown-header">地区</li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">广州</a></li>
+                <!-- 分割线 -->
+                <li role="separator" class="divider"></li>
+                <li><a href="#">喀什</a></li>
+            </ul>
+            <button type="button" class="btn btn-default">默认</button>
+            <button type="button" class="btn btn-default">默认</button>
+        </div>
+
+        <!-- 两端对齐的按钮组 -->
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Left</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Middle</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 1200px;
+            margin: 50px auto;
+        }
+        .icon{
+            font-size: 50px;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="glyphicon glyphicon-education icon" ></span>
+
+        <!-- 和表单元素结合使用 -->
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">有图标</label>
+            <input type="text" class="form-control" id="inputSuccess2" >
+            <!-- 多一个放图标的标签 -->
+            <span class="glyphicon glyphicon-music form-control-feedback" aria-hidden="true"></span> 
+        </div>
+
+        <!-- 和按钮结合使用 -->
+        <button type="button" class="btn btn-default">
+            （默认样式）Default
+            <span class="glyphicon glyphicon-apple"></span>
+        </button>
+    </div>
+</body>
+</html>

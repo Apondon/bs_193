@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .box {
+            width: 1200px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- 默认警告框 -->
+        <!-- <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+        <div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
+        <div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
+        <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div> -->
+        <!-- 带关闭按钮的警告框 -->
+        <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+
+        <!-- alert-dismissible 带关闭按钮 -->
+        <!-- fade in 增加过渡效果 -->
+        <div class="alert alert-success alert-dismissible fade in" role="alert" id="alt">
+            <!-- 关闭按钮 -->
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+            Well done! You successfully read this important alert message.
+        </div>
+
+        <button type="button" class="btn btn-danger" id='gb'>关闭</button>
+
+        <div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Heads up! This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Warning! Better check yourself, you're not looking too good.
+        </div>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            Oh snap! Change a few things up and try submitting again.
+        </div>
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script>
+    $(function(){
+        $('#gb').on('click',function(){
+            $('#alt').alert('close')
+        })
+        $('#alt').on('close.bs.alert',function(){
+            alert('关闭前')
+        })
+        $('#alt').on('closed.bs.alert',function(){
+            alert('关闭后')
+        })
+    })
+</script>
+</html>

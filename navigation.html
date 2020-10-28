@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        .box {
+            width: 1200px;
+            margin: 50px auto;
+            height: 1000px;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- navbar-fixed-top 固定在顶部  navbar-fixed-bottom 固定在底部  navbar-static-top 静止在顶部-->
+        <!-- navbar-inverse 反色导航条 navbar-default 默认导航条-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- 最左侧按钮 navbar-header -->
+                <div class="navbar-header">
+                    <!-- 按钮 -->
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button> -->
+                    <!-- 文字 -->
+                    <a class="navbar-brand" href="#">Brand</a>
+                    <!-- 图片/图标 -->
+                    <!-- <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="...">
+                    </a> -->
+                </div>
+
+                <!-- 导航栏 导航 navbar-nav -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <!-- link按钮 -->
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                        <!-- 下拉选项-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 搜索栏  navbar-form-->
+                    <!-- navbar-left 在当前导航栏左侧开始排列 -->
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    
+                    <!-- 按钮 navbar-btn-->
+                    <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+                    <!-- navbar-right 在当前导航栏右侧开始排列 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- link按钮 -->
+                        <li><a href="#">Link</a></li>
+                        <!-- 最右侧下拉 -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 非导航链接 navbar-text 文字  navbar-link 链接-->
+                    <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</body>
+<script src="./jquery.min.js"></script>
+<script src="./bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</html>
